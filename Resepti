@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+
+public class Resepti {
+    
+    private String nimi;
+    private int keittoaika;
+    private ArrayList<String> ainekset;
+    private ArrayList<Resepti> reseptit;
+    
+    public Resepti(String nimi, int keittoaika) {
+        this.nimi = nimi;
+        this.keittoaika = keittoaika;
+        this.ainekset = new ArrayList<>();
+    }
+    
+    public void lisaa(String aines) {
+        this.ainekset.add(aines);
+    }
+    
+    public String nimi() {
+        return this.nimi();
+    }
+    
+    public int keittoaika() {
+        return this.keittoaika;
+    }
+    
+    public void ainekset() {
+        for (String aines : ainekset) {
+            System.out.println(aines);
+        }
+    }
+    
+}
